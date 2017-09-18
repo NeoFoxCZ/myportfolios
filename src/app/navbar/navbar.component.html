@@ -1,0 +1,60 @@
+<nav class="nav">
+  <div class="nav-left">
+    <a class="nav-item">
+      <!-- <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo"> -->
+      <!-- <i class="fa fa-twitter is-hidden-tablet" aria-hidden="true" style="font-size: 20px;"></i> -->
+      <span (click)="scrollTop(1)" class="menu-mobile is-hidden-tablet">Portfolio</span>
+    </a>
+  </div>
+
+  <div class="nav-center nav-menu is-hidden-mobile">
+    <!-- <a class="nav-item menu" pageScroll [pageScrollOffset]="0" [pageScrollDuration]="700" [pageScrollInterruptible]="false" [pageScrollEasing]="myEasing" href="#awesomePart1"> -->
+    <a class="nav-item menu " [ngClass]="{'active-menu': menuState==''}" (click)="scrollTop(1)">
+      <!-- <sspanan class="icon">
+        <i class="fa fa-github"></i>
+      </sspanan> -->
+      <p >HOME</p>
+    </a>
+    <a class="nav-item menu " [ngClass]="{'active-menu': menuState=='#experience'}" (click)="scrollOther('#experience',1)">
+      <p>EXPERIENCE</p>
+    </a>
+    <a class="nav-item menu " [ngClass]="{'active-menu': menuState=='#technology'}" (click)="scrollOther('#technology',1)">
+      <p>TECHNOLOGY</p>
+    </a>
+    <a class="nav-item menu " [ngClass]="{'active-menu': menuState=='#aboutme'}" (click)="scrollOther('#aboutme',1)">
+      <p>ABOUT ME</p>
+    </a>
+    <!-- <a class="nav-item menu " [ngClass]="{'active-menu': menuState=='#contact'}" (click)="scrollOther('#contact',1)">
+      <p>CONTACT</p>
+    </a> -->
+
+  </div>
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+  <span class="nav-toggle" (click)="toggle()" [ngClass]="{'is-active': toggleStatus}">
+    <span class="color-white"></span>
+    <span class="color-white"></span>
+    <span class="color-white"></span>
+  </span>
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div class="nav-right nav-menu" [ngClass]="{'is-active': toggleStatus}">
+    <a class="nav-item is-hidden-tablet" (click)="scrollTop(2)">
+      HOME
+    </a>
+    <a class="nav-item is-hidden-tablet" (click)="scrollOther('#experience',2)">
+      EXPERIENCE
+    </a>
+    <a class="nav-item is-hidden-tablet" (click)="scrollOther('#technology',2)">
+      TECHNOLOGY
+    </a>
+    <a class="nav-item is-hidden-tablet" (click)="scrollOther('#aboutme',2)">
+      ABOUT ME
+    </a>
+    <!-- <a class="nav-item is-hidden-tablet" (click)="scrollOther('#contact',2)">
+      CONTACT
+    </a> -->
+  </div>
+</nav>

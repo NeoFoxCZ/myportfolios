@@ -1,0 +1,138 @@
+.image-bg {
+  /*height: 100vh;*/
+  min-height: 100vh;
+  max-height: auto;
+  margin: 0px 0px;
+  background-color: white;
+  /*opacity: 0.85;*/
+  /*background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;*/
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-bg {
+    /*height: 100%;*/
+    min-height: 100vh;
+    max-height: auto;
+    margin: 0px 0px;
+    /*opacity: 0.85;*/
+    /*background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;*/
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/*body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}*/
+/*.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.89)),url('https://images.unsplash.com/1/iphone-4-closeup.jpg?dpr=1&auto=format&crop=middle&fit=crop&w=2000&h=700&q=80');
+}*/
+.is-outlined {
+  background-color:transparent;
+  color:#fff;
+}
+/*.hero-cta {
+  padding: 30px 0;
+}*/
+/*.panel-block.section p {
+  font-size: 17px;
+  line-height: 1.4;
+  color:#95A5A6;
+}*/
+.section.main {
+  /*background-color:#F0F0F0;*/
+}
+.icon-block {
+  font-size:5em;
+}
+
+/*.test:hover {
+  background-color: red;
+  transition: background-color 0.3s ease-in;
+  transform: translate(100%, 0%);
+}*/
+
+.example-title {
+  text-align: center;
+  /*margin-bottom: 60px;*/
+  padding: 3em 0;
+  /*border-bottom: 1px solid #E4EAEC;*/
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.section {
+  /*padding: 1rem 0.5rem;*/
+}
+
+.panel {
+  border-style: solid;
+  /*text-align: center;*/
+  /*min-width: 300px;
+  min-height: 300px;*/
+  /*height: 300px;
+  width: 300px;*/
+}
+
+.card {
+  /*width: 300px;
+  height: 300px;*/
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+/*.card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}*/
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.img-size-max {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0% auto 0% auto;
+}
+
+.progress-custom {
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto auto auto auto;
+  /*position: relative;*/
+}
